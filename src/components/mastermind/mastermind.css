@@ -1,0 +1,106 @@
+.mm-game{
+    background-color: #4a414e;
+    padding: 1em;
+    border: .5rem solid rgb(27, 27, 27);
+    border-radius: 2rem;
+    width: 25rem;
+}
+
+.tile-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #39333c;
+    border-radius: 10px;
+    border: 2px solid #645969;
+    padding: 5px;
+}
+
+.tiles{
+    height: 50px;
+    width: 50px;
+    background-size: 0;
+    border: 2px solid #34243e;
+    border-radius: 30px;
+    margin: .2em;
+}
+
+.exact, .parcial{
+    height: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.filled-blue,
+.filled-green,
+.filled-orange,
+.filled-red{
+    box-shadow: inset 0 -4px 1.5px #41414170;
+    transition: background-position .5s;
+    /* animation: stretch-animation .5s ease-out .3s; */
+}
+
+.filled-orange{
+    background-color: #ffca2a;
+
+    background: linear-gradient(#39333c 50%, #ffca2a 50%);
+    background-size: 200% 200%;
+    background-position: 0 -100%;
+}
+
+.filled-red{
+    background-color: #ff2a6a;
+
+    background: linear-gradient( #ff2a6a 50%,  #ffca2a 50%);
+    background-size: 200% 200%;
+    background-position: 0 -200%;
+}
+
+.filled-green{
+    background-color: #c5ff2a;
+
+    background: linear-gradient(#ff2a6a 50%, #c5ff2a 50%);
+    background-size: 200% 200%;
+    background-position: 0 -300%;
+}
+
+.filled-blue{
+    background-color: #67c0ff;
+    background: linear-gradient(#67c0ff 50%, #ff2a6a 50%);
+    background-size: 200% 200%;
+    background-position: 0 -400%;
+}
+
+.clue-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+  
+.clue-tiles{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #34243e;
+    border-radius: 30px;
+    margin: .08em;
+}
+
+.exact-clue{
+    background-color: white;
+    box-shadow: inset -1px -2px 1px #B3B3B3;
+}
+
+.parcial-clue{
+    background-color: black;
+    box-shadow: inset -1px -1.5px 1.5px rgb(31, 31, 31);
+}
+
+@keyframes stretch-animation {
+    25% {
+      transform: scale3d(.9, 1.2, 1);
+      margin-top: 5px;
+    }
+    75% {
+      transform: scale3d(1.1, .95, 1);
+    }
+}
