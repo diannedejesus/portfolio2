@@ -1,6 +1,8 @@
 function Introduction() {
+  const style = { width: "95%" };
+
   return (
-    <section className="w-100 mx-auto text-start">
+    <section className="mx-auto text-start" style={style}>
       <div className="card border-0 text-bg-secondary">
         <div className="card-body">
           <h2 className="card-title fs-2 lh-base">

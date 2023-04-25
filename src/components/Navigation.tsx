@@ -3,7 +3,7 @@ import "bootstrap/js/dist/collapse";
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-md navbar-primary bg-primary p-0">
       <a
         className="navbar-brand mx-3"
         href="https://vitejs.dev"

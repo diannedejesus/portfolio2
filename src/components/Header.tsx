@@ -4,11 +4,17 @@ import HeroImage from "./HeroImage";
 
 function Header() {
   return (
-    <header className="text-center">
+    <header className="">
       <Navigation />
-      <div className="container-lg d-inline-flex m-5 justify-content-evenly align-items-center">
-        <Introduction />
-        <HeroImage />
+      <div className="p-5 bg-image">
+        <div className="row gap-5 align-items-center">
+          <div className="col-md-6 col-sm-12">
+            <HeroImage />
+          </div>
+          <div className="col hidden-sm-down">
+            <Introduction />
+          </div>
+        </div>
       </div>
     </header>
   );

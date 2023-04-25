@@ -2,7 +2,7 @@ import PersonalAvatar from "/pic.png";
 
 function HeroImage() {
   return (
-    <section className="d-flex flex-column d-inline-flex mb-5">
+    <section className="d-flex flex-column d-inline-flex my-4">
       <ul className="list-group list-group-horizontal m-2 rounded-0">
         <li className="list-group-item list-group-item-primary rounded-0">
           UI
@@ -16,7 +16,7 @@ function HeroImage() {
       <div className="d-inline-flex justify-content-center">
         <img
           src={PersonalAvatar}
-          width="300px"
+          width="85%"
           className="d-inline-block align-text-right align-top rounded"
           alt="Personal logo"
         />
