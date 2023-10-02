@@ -1,5 +1,5 @@
-import "./custom.css";
-import PersonalAvatar from "/pic.png";
+import WorkPreview from "./WorkPreview";
+// import "./custom.css";
 
 function HeroImage() {
   return (
@@ -9,7 +9,7 @@ function HeroImage() {
           <h2 className="card-title fs-2 lh-base">
             Hello, I'm Dianne M. De Jesús
             <br /> a{" "}
-            <span className="fs-1 fw-bolder text-primary">
+            <span className="fs-1 fw-bolder title-color">
               {"{ Software Developer }"}
             </span>
           </h2>
@@ -18,46 +18,13 @@ function HeroImage() {
             my personal own curiosities and interests.
           </p>
           <div className="mt-5">
-            <a href="#" className="fs-3 me-4 py-3 px-5 btn btn-warning">
+            <a href="#" className="fs-3 me-4 py-3 px-5 btn button-theme">
               Hire Me
             </a>
 
             <a href="#" className="link-dark btn fs-5">
               Or let's connect
             </a>
-          </div>
-        </div>
-      </div>
-      <div className="mt-5">
-        <h3 className="text-start mb-4 fs-2">Latest Works</h3>
-        <div className="row row-cols-3">
-          <div className="col">
-            <div className="card">
-              <img
-                src="https://placehold.co/60x70"
-                className="card-img-top"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img
-                src="https://placehold.co/60x70"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body py-0"></div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img
-                src="https://placehold.co/60x70"
-                className="card-img-top"
-                alt="..."
-              />
-            </div>
           </div>
         </div>
       </div>

@@ -6,13 +6,10 @@ function Header() {
   return (
     <header className="">
       <Navigation />
-      <div className="p-5 bg-image">
+      <div className="p-1 p-sm-5 bg-image">
         <div className="row gap-5 align-items-center">
-          <div className="col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-9">
             <HeroImage />
-          </div>
-          <div className="col hidden-sm-down">
-            <Introduction />
           </div>
         </div>
       </div>
