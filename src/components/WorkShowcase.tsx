@@ -13,9 +13,9 @@ function WorkShowcase({ imageSource, imageAlt }: Props) {
           <span className="word-highlight">start</span> in finding a home
         </h1>
         <section className="d-flex justify-content-around mb-5">
-          <div className="card m-4">
+          <div className="card m-4 bg-transparent border-0">
             <img
-              className=""
+              className="rounded"
               src="https://placehold.co/850x450"
               alt="main image"
             />
@@ -25,7 +25,7 @@ function WorkShowcase({ imageSource, imageAlt }: Props) {
             </p>
           </div>
           <img
-            className="card m-4"
+            className="card m-4 bg-transparent rounded border-0"
             src="https://placehold.co/275x500"
             alt="gif"
           />
@@ -36,8 +36,14 @@ function WorkShowcase({ imageSource, imageAlt }: Props) {
         </p>
         <h2>Customizable data, reliable results</h2>
         <section className="d-flex justify-content-around  pb-5">
-          <img className="card m-4" src="https://placehold.co/600x400" />
-          <img className="card m-4" src="https://placehold.co/600x400" />
+          <img
+            className="card m-4 bg-transparent rounded border-0"
+            src="https://placehold.co/600x400"
+          />
+          <img
+            className="card m-4 bg-transparent rounded border-0"
+            src="https://placehold.co/600x400"
+          />
         </section>
       </section>
     </>
