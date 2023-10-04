@@ -42,14 +42,6 @@ function Navigation() {
               Connect
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Information
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled">More</a>
-          </li>
         </ul>
       </div>
     </nav>
