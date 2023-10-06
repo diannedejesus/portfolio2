@@ -42,6 +42,11 @@ function Navigation() {
               Connect
             </a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link disabled" aria-current="page" href="#">
+              Other
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

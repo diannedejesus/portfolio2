@@ -1,22 +1,22 @@
 interface Props {
-  imageSource?: string;
+  topLeftImgSrc?: string;
   imageAlt?: string;
-  imageSource2?: string;
+  topRightImgSrc?: string;
   imageAlt2?: string;
-  imageSource3?: string;
+  bottomLeftImgSrc?: string;
   imageAlt3?: string;
-  imageSource4?: string;
+  bottomRightImgSrc?: string;
   imageAlt4?: string;
 }
 
 function WorkShowcase({
-  imageSource,
+  topLeftImgSrc,
   imageAlt,
-  imageSource2,
+  topRightImgSrc,
   imageAlt2,
-  imageSource3,
+  bottomLeftImgSrc,
   imageAlt3,
-  imageSource4,
+  bottomRightImgSrc,
   imageAlt4,
 }: Props) {
   return (
@@ -31,7 +31,9 @@ function WorkShowcase({
           <div className="card m-2 m-md-4 bg-transparent border-0">
             <img
               className="rounded"
-              src={imageSource ? imageSource : "https://placehold.co/850x450"}
+              src={
+                topLeftImgSrc ? topLeftImgSrc : "https://placehold.co/850x450"
+              }
               alt={imageAlt ? imageAlt : "Placeholder Text"}
             />
             <p className="fs-6 fw-lighter d-flex justify-content-start px-2">
@@ -42,7 +44,9 @@ function WorkShowcase({
           <div className="card m-2 m-md-4 bg-transparent border-0">
             <img
               className="card-img-top rounded"
-              src={imageSource2 ? imageSource2 : "https://placehold.co/275x500"}
+              src={
+                topRightImgSrc ? topRightImgSrc : "https://placehold.co/275x500"
+              }
               alt={imageAlt2 ? imageAlt2 : "Placeholder Text"}
             />
           </div>
@@ -55,12 +59,20 @@ function WorkShowcase({
         <section className="d-flex justify-content-around pb-5">
           <img
             className="card m-2 m-md-4 bg-transparent rounded border-0"
-            src={imageSource3 ? imageSource3 : "https://placehold.co/600x400"}
+            src={
+              bottomLeftImgSrc
+                ? bottomLeftImgSrc
+                : "https://placehold.co/600x400"
+            }
             alt={imageAlt3 ? imageAlt3 : "Placeholder Text"}
           />
           <img
             className="card m-2 m-md-4 bg-transparent rounded border-0"
-            src={imageSource4 ? imageSource4 : "https://placehold.co/600x400"}
+            src={
+              bottomRightImgSrc
+                ? bottomRightImgSrc
+                : "https://placehold.co/600x400"
+            }
             alt={imageAlt4 ? imageAlt4 : "Placeholder Text"}
           />
         </section>

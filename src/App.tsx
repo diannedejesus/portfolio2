@@ -15,7 +15,7 @@ function App() {
       <header>
         <Navigation />
         <div className="p-3 p-sm-5 bg-image gap-5 align-items-center">
-          <div className="col-lg-6 col-md-9">
+          <div className="col-lg-7 col-md-9">
             <HeroImage />
             <div className="mt-5">
               <h3 className="text-start mb-3 fs-2">Latest Works</h3>
@@ -73,13 +73,13 @@ function App() {
 
       {showWork && (
         <WorkShowcase
-          imageSource="rent-calculator.gif"
+          topLeftImgSrc="rent-calculator.gif"
           imageAlt="This GIF shows all the windows for app customization, the main window and an example of the PDF produced"
-          imageSource2="rentcalc-main.png"
+          topRightImgSrc="rentcalc-main.png"
           imageAlt2="This images shows the main window of the app, which lets you input voucher size, annual income, number of dependants and whether the family is elderly or/and disabled"
-          imageSource3="rentcalc-utilities.png"
+          bottomLeftImgSrc="rentcalc-utilities.png"
           imageAlt3="This images shows the utilities window of the app, which lets you input the cuurent utilities allowance for each voucher size"
-          imageSource4="rentcalc-pdf.png"
+          bottomRightImgSrc="rentcalc-pdf.png"
           imageAlt4="This images shows an example of the pdf produced by the app which display some information about the calculation and its results"
         />
       )}
