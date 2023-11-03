@@ -1,24 +1,4 @@
-interface Props {
-  topLeftImgSrc?: string;
-  imageAlt?: string;
-  topRightImgSrc?: string;
-  imageAlt2?: string;
-  bottomLeftImgSrc?: string;
-  imageAlt3?: string;
-  bottomRightImgSrc?: string;
-  imageAlt4?: string;
-}
-
-function WorkShowcase({
-  topLeftImgSrc,
-  imageAlt,
-  topRightImgSrc,
-  imageAlt2,
-  bottomLeftImgSrc,
-  imageAlt3,
-  bottomRightImgSrc,
-  imageAlt4,
-}: Props) {
+function WorkShowcase() {
   return (
     <>
       <section className="text-center pt-5 showcase-theme">
@@ -31,10 +11,8 @@ function WorkShowcase({
           <div className="card m-2 m-md-4 bg-transparent border-0">
             <img
               className="rounded"
-              src={
-                topLeftImgSrc ? topLeftImgSrc : "https://placehold.co/850x450"
-              }
-              alt={imageAlt ? imageAlt : "Placeholder Text"}
+              src="rent-calculator.gif"
+              alt="This GIF shows all the windows for app customization, the main window and an example of the PDF produced"
             />
             <p className="fs-6 fw-lighter d-flex justify-content-start px-2">
               * Built with the reliability of WPF, XAML, C# to run on all your
@@ -44,10 +22,8 @@ function WorkShowcase({
           <div className="card m-2 m-md-4 bg-transparent border-0">
             <img
               className="card-img-top rounded"
-              src={
-                topRightImgSrc ? topRightImgSrc : "https://placehold.co/275x500"
-              }
-              alt={imageAlt2 ? imageAlt2 : "Placeholder Text"}
+              src="rentcalc-main.png"
+              alt="This images shows the main window of the app, which lets you input voucher size, annual income, number of dependants and whether the family is elderly or/and disabled"
             />
           </div>
         </section>
@@ -59,21 +35,13 @@ function WorkShowcase({
         <section className="d-flex justify-content-around pb-5">
           <img
             className="card m-2 m-md-4 bg-transparent rounded border-0"
-            src={
-              bottomLeftImgSrc
-                ? bottomLeftImgSrc
-                : "https://placehold.co/600x400"
-            }
-            alt={imageAlt3 ? imageAlt3 : "Placeholder Text"}
+            src="rentcalc-utilities.png"
+            alt="This images shows the utilities window of the app, which lets you input the cuurent utilities allowance for each voucher size"
           />
           <img
             className="card m-2 m-md-4 bg-transparent rounded border-0"
-            src={
-              bottomRightImgSrc
-                ? bottomRightImgSrc
-                : "https://placehold.co/600x400"
-            }
-            alt={imageAlt4 ? imageAlt4 : "Placeholder Text"}
+            src="rentcalc-pdf.png"
+            alt="This images shows an example of the pdf produced by the app which display some information about the calculation and its results"
           />
         </section>
       </section>

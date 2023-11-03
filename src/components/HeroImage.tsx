@@ -3,7 +3,7 @@ import WorkPreview from "./WorkPreview";
 
 function HeroImage() {
   return (
-    <section className="">
+    <section className="herosection">
       <div className="card border-0 bg-transparent w-75">
         <div className="card-body p-0">
           <h2 className="card-title fs-2 lh-1 mb-2">

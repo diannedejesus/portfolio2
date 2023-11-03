@@ -7,6 +7,13 @@ import WorkShowcase from "./components/WorkShowcase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
+type Showcases = {
+  topLeftImg: { src: string; alt: string };
+  topRightImg: { src: string; alt: string };
+  bottomLeftImg: { src: string; alt: string };
+  bottomRightImg: { src: string; alt: string };
+};
+
 function App() {
   const [showWork, setShowWork] = useState("");
 
@@ -27,11 +34,11 @@ function App() {
                       ? setShowWork("")
                       : setShowWork("first")
                   }
-                  imageAlt="Main window for rent estimator application"
+                  imageAlt="Partial image of the main window for the rent estimator application"
                 />
 
                 <WorkPreview
-                  imageSource="https://placehold.co/60x70"
+                  imageSource="debts-table.png"
                   linkSource={() =>
                     showWork === "second"
                       ? setShowWork("")
@@ -71,18 +78,16 @@ function App() {
         </div>
       </header>
 
-      {showWork && (
-        <WorkShowcase
-          topLeftImgSrc="rent-calculator.gif"
-          imageAlt="This GIF shows all the windows for app customization, the main window and an example of the PDF produced"
-          topRightImgSrc="rentcalc-main.png"
-          imageAlt2="This images shows the main window of the app, which lets you input voucher size, annual income, number of dependants and whether the family is elderly or/and disabled"
-          bottomLeftImgSrc="rentcalc-utilities.png"
-          imageAlt3="This images shows the utilities window of the app, which lets you input the cuurent utilities allowance for each voucher size"
-          bottomRightImgSrc="rentcalc-pdf.png"
-          imageAlt4="This images shows an example of the pdf produced by the app which display some information about the calculation and its results"
-        />
+      {showWork === "first" && (
+        <>
+          <div className="zigzag"></div>
+          <WorkShowcase />
+        </>
       )}
+
+      {showWork === "second" && null}
+
+      {showWork === "third" && null}
     </div>
   );
 }
