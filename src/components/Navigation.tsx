@@ -34,12 +34,12 @@ function Navigation() {
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link disabled" aria-current="page" href="#">
-              Projects
+              GitHub
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Connect
+              LinkedIn
             </a>
           </li>
           <li className="nav-item">

@@ -13,8 +13,9 @@ function HeroImage() {
             </span>
           </h2>
           <p className="card-text m-0">
-            Who is currently building projects that serve my current clients and
-            my own personal curiosities and interests.
+            who is ready to take on new diverse tasks, collaborate with team
+            memebers or clients and delver the desired results in the
+            established time-frame.
           </p>
           <div className="mt-5">
             <a href="#" className="fs-3 me-2 py-3 px-5 btn button-theme">

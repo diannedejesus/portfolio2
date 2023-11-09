@@ -21,10 +21,13 @@ function App() {
     <div>
       <header>
         <Navigation />
-        <div className="p-3 p-sm-5 bg-image gap-5 align-items-center">
+        <div className="p-3 p-sm-5 bg-image align-items-center">
           <div className="col-lg-7 col-md-9">
             <HeroImage />
-            <div className="mt-5">
+          </div>
+
+          <div className="row">
+            <div className="mt-5 col-lg-7 col-md-9">
               <h3 className="text-start mb-3 fs-2">Latest Works</h3>
               <div className="row g-1 g-sm-4 row-cols-3">
                 <WorkPreview
