@@ -18,80 +18,53 @@ function App() {
   const [showWork, setShowWork] = useState("");
 
   return (
-    <div>
-      <header>
-        <Navigation />
-        <div className="p-3 p-sm-5 bg-image align-items-center">
-          <div className="col-lg-7 col-md-9">
-            <HeroImage />
+    <header>
+      <Navigation />
+      <div className="p-3 p-sm-5 bg-image">
+        <div className="col-lg-7 col-md-9">
+          <HeroImage />
+        </div>
+
+        <div className="mt-5 col-lg-7 col-md-9">
+          <h3 className="text-start mb-3 fs-3">Latest Works</h3>
+          <div className="row g-1 g-sm-4 row-cols-3">
+            <WorkPreview
+              imageSource="rentcalc-main2.png"
+              linkSource={() =>
+                showWork === "first" ? setShowWork("") : setShowWork("first")
+              }
+              imageAlt="Partial image of the main window for the rent estimator application"
+            />
+
+            <WorkPreview
+              imageSource="debts-table.png"
+              linkSource={() =>
+                showWork === "second" ? setShowWork("") : setShowWork("second")
+              }
+              imageAlt=""
+            />
+            <WorkPreview
+              imageSource="https://placehold.co/60x45"
+              linkSource={() =>
+                showWork === "third" ? setShowWork("") : setShowWork("third")
+              }
+              imageAlt=""
+            />
           </div>
-
-          <div className="row">
-            <div className="mt-5 col-lg-7 col-md-9">
-              <h3 className="text-start mb-3 fs-2">Latest Works</h3>
-              <div className="row g-1 g-sm-4 row-cols-3">
-                <WorkPreview
-                  imageSource="rentcalc-main2.png"
-                  linkSource={() =>
-                    showWork === "first"
-                      ? setShowWork("")
-                      : setShowWork("first")
-                  }
-                  imageAlt="Partial image of the main window for the rent estimator application"
-                />
-
-                <WorkPreview
-                  imageSource="debts-table.png"
-                  linkSource={() =>
-                    showWork === "second"
-                      ? setShowWork("")
-                      : setShowWork("second")
-                  }
-                  imageAlt=""
-                />
-                <WorkPreview
-                  imageSource="https://placehold.co/60x70"
-                  linkSource={() =>
-                    showWork === "third"
-                      ? setShowWork("")
-                      : setShowWork("third")
-                  }
-                  imageAlt=""
-                />
-              </div>
-              <div className="row g-0 mb-4 row-cols-3 title-color fs-2 text-center">
-                <div>
-                  {showWork === "first" && (
-                    <FontAwesomeIcon icon={faAnglesDown} />
-                  )}
-                </div>
-                <div>
-                  {showWork === "second" && (
-                    <FontAwesomeIcon icon={faAnglesDown} />
-                  )}
-                </div>
-                <div>
-                  {showWork === "third" && (
-                    <FontAwesomeIcon icon={faAnglesDown} />
-                  )}
-                </div>
-              </div>
+          <div className="row g-0 mb-4 row-cols-3 title-color fs-2 text-center">
+            <div>
+              {showWork === "first" && <FontAwesomeIcon icon={faAnglesDown} />}
+            </div>
+            <div>
+              {showWork === "second" && <FontAwesomeIcon icon={faAnglesDown} />}
+            </div>
+            <div>
+              {showWork === "third" && <FontAwesomeIcon icon={faAnglesDown} />}
             </div>
           </div>
         </div>
-      </header>
-
-      {showWork === "first" && (
-        <>
-          <div className="zigzag"></div>
-          <WorkShowcase />
-        </>
-      )}
-
-      {showWork === "second" && null}
-
-      {showWork === "third" && null}
-    </div>
+      </div>
+    </header>
   );
 }
 

@@ -1,9 +1,9 @@
 .bg-image {
-  background: url(/Teamprogrammers.jpg) no-repeat right top;
+  background: url(/4882464.jpg) no-repeat right top;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
-  background-size: 80%;
+  background-size: contain;
 }
 
 h2,
@@ -26,10 +26,6 @@ a.button-theme:hover {
   background-color: rgb(255, 244, 212);
 }
 
-.word-highlight {
-  color: rgb(255, 96, 80);
-}
-
 @media (max-width: 768px) {
   .bg-image {
     background: none;
@@ -49,7 +45,7 @@ a.button-theme:hover {
     opacity: 0.1;
     z-index: -1;
 
-    background: url(/Teamprogrammers.jpg) no-repeat right center;
+    background: url(/4882464.jpg) no-repeat right center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
