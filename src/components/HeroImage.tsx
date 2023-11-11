@@ -14,8 +14,9 @@ function HeroImage() {
           </h2>
           <p className="card-text m-0">
             who is ready to take on new diverse tasks, collaborate with team
-            memebers or clients and deliver the desired results in the
-            established time-frame.
+            members or clients and deliver the desired results in the
+            established time-frame. I also enjoy learning new topics and taking
+            on new projects.
           </p>
           <div className="mt-4 mt-lg-5">
             <a href="#" className="fs-5 me-2 py-2 px-4 btn button-theme">

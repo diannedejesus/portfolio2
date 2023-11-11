@@ -3,6 +3,7 @@ interface Props {
   linkSource: () => void;
   imageAlt: string;
   hiddenOption?: string;
+  title: string;
 }
 
 function WorkPreview({
@@ -10,14 +11,18 @@ function WorkPreview({
   linkSource,
   imageAlt,
   hiddenOption,
+  title,
 }: Props) {
   return (
     <>
       <div className={"col " + hiddenOption}>
         <div className="card">
           <a onClick={linkSource} className="">
-            <img src={imageSource} className="card-img-top" alt={imageAlt} />
+            <img src={imageSource} className="card-img" alt={imageAlt} />
           </a>
+          <div className="card-header">
+            <h5 className="card-title fs-6 m-0 p-0">{title}</h5>
+          </div>
         </div>
       </div>
     </>
