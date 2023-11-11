@@ -1,16 +1,12 @@
-import viteLogo from "/vite.svg";
+//import viteLogo from "/vite.svg";
 import "bootstrap/js/dist/collapse";
 
 function Navigation() {
   return (
     <nav className="navbar navbar-expand-md p-0">
-      <a
-        className="navbar-brand mx-3"
-        href="https://vitejs.dev"
-        target="_blank"
-      >
+      <a className="navbar-brand mx-3" href="/">
         <img
-          src={viteLogo}
+          src="ddt-high-resolution-logo-black-transparent.png"
           className="logo d-inline-block align-text-top"
           alt="Personal logo"
         />

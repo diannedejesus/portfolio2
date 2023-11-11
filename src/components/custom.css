@@ -12,18 +12,24 @@ h2 span {
 }
 
 nav {
-  background-color: rgb(1, 194, 194);
+  background-color: rgb(208, 231, 239);
 }
 
 .title-color {
-  color: rgb(1, 194, 194);
+  color: rgb(212, 84, 115);
 }
 
 a.button-theme {
-  background-color: rgb(255, 208, 14);
+  background-color: rgb(255, 197, 90);
 }
 a.button-theme:hover {
-  background-color: rgb(255, 244, 212);
+  background-color: rgb(252, 233, 189);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -38,10 +44,10 @@ a.button-theme:hover {
   .bg-image::before {
     content: "";
     position: absolute;
-    top: 1em;
+    top: 1.5rem;
     left: 0;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     opacity: 0.1;
     z-index: -1;
 

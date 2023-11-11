@@ -4,7 +4,7 @@ import WorkPreview from "./WorkPreview";
 function HeroImage() {
   return (
     <section className="herosection">
-      <div className="card border-0 bg-transparent w-75">
+      <div className="card border-0 bg-transparent">
         <div className="card-body p-0">
           <h2 className="card-title fs-3 lh-1 mb-2">
             Hello, I'm Dianne M. De Jesús a{" "}
@@ -14,12 +14,12 @@ function HeroImage() {
           </h2>
           <p className="card-text m-0">
             who is ready to take on new diverse tasks, collaborate with team
-            memebers or clients and delver the desired results in the
+            memebers or clients and deliver the desired results in the
             established time-frame.
           </p>
-          <div className="mt-5">
-            <a href="#" className="fs-4 me-2 py-2 px-5 btn button-theme">
-              Hire Me
+          <div className="mt-4 mt-lg-5">
+            <a href="#" className="fs-5 me-2 py-2 px-4 btn button-theme">
+              Contact me
             </a>
 
             <a href="#" className="link-dark btn fs-6">
