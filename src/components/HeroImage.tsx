@@ -19,11 +19,19 @@ function HeroImage() {
             on new projects.
           </p>
           <div className="mt-4 mt-lg-5">
-            <a href="#" className="fs-5 me-2 py-2 px-4 btn button-theme">
+            <a
+              href="#"
+              target="_blank"
+              className="fs-5 me-2 py-2 px-4 btn button-theme"
+            >
               Contact me
             </a>
 
-            <a href="#" className="link-dark btn fs-6">
+            <a
+              href="https://twitter.com/dianne_djs"
+              target="_blank"
+              className="link-dark btn fs-6"
+            >
               Or let's connect
             </a>
           </div>

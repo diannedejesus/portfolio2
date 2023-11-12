@@ -42,7 +42,7 @@ function App() {
             />
 
             <WorkPreview
-              imageSource="rentcalc-pdf.png"
+              imageSource="user-admin.png"
               linkSource={() =>
                 showWork === "third" ? setShowWork("") : setShowWork("third")
               }

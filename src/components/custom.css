@@ -23,7 +23,7 @@ a.button-theme {
   background-color: rgb(255, 197, 90);
 }
 a.button-theme:hover {
-  background-color: rgb(252, 233, 189);
+  background-color: rgb(255, 197, 90, 0.6);
 }
 
 .card-img {
