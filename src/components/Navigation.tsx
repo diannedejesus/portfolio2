@@ -7,7 +7,7 @@ function Navigation() {
     <nav className="navbar navbar-expand-md p-0">
       <a className="navbar-brand mx-3" href="/">
         <img
-          src="ddt-high-resolution-logo-black-transparent.png"
+          src="logo.png"
           className="logo d-inline-block align-text-top"
           alt="Personal logo"
         />
@@ -72,13 +72,21 @@ function Navigation() {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#" target="_blank">
-                  Another action
+                <a
+                  className="dropdown-item"
+                  href="https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-8&r%5B%5D=-7&tags=Recursion&beta=false&order_by=total_completed%20desc"
+                  target="_blank"
+                >
+                  Recursion
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#" target="_blank">
-                  Something else here
+                <a
+                  className="dropdown-item"
+                  href="https://www.youtube.com/watch?v=SqcY0GlETPk"
+                  target="_blank"
+                >
+                  Learn React
                 </a>
               </li>
             </ul>

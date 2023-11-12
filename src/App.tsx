@@ -22,11 +22,11 @@ function App() {
           <h3 className="text-start mb-3 fs-4">Latest Works</h3>
           <div className="row g-1 g-sm-4 row-cols-2 row-cols-sm-3">
             <WorkPreview
-              imageSource="rent-calculator.gif"
+              imageSource="rentcalc-main.png"
               linkSource={() =>
                 showWork === "first" ? setShowWork("") : setShowWork("first")
               }
-              imageAlt="Partial image of the main window for the rent estimator application"
+              imageAlt="Image of the main window for the rent estimator application which estimates the rent for a PHA participant/solicitant"
               title="Rent Estimator"
               link=""
             />
@@ -36,20 +36,20 @@ function App() {
               linkSource={() =>
                 showWork === "second" ? setShowWork("") : setShowWork("second")
               }
-              imageAlt=""
+              imageAlt="Partial screenshot of the case review page of an application for managing debts owed to a PHA"
               title="Debt Manager"
               link="https://github.com/diannedejesus/debt_tracker"
             />
 
             <WorkPreview
-              imageSource="user-admin.png"
+              imageSource="todoapp.png"
               linkSource={() =>
                 showWork === "third" ? setShowWork("") : setShowWork("third")
               }
-              imageAlt=""
+              imageAlt="Partial screenshot of the main page of an application for managing you todo list"
               hiddenOption="d-none d-sm-block"
-              title="Project"
-              link=""
+              title="The Todo List"
+              link="https://github.com/diannedejesus/the-todo-app"
             />
           </div>
           <div className="row g-0 mb-4 row-cols-3 title-color fs-2 text-center">
