@@ -28,6 +28,7 @@ function App() {
               }
               imageAlt="Partial image of the main window for the rent estimator application"
               title="Rent Estimator"
+              link=""
             />
 
             <WorkPreview
@@ -37,6 +38,7 @@ function App() {
               }
               imageAlt=""
               title="Debt Manager"
+              link="https://github.com/diannedejesus/debt_tracker"
             />
 
             <WorkPreview
@@ -47,6 +49,7 @@ function App() {
               imageAlt=""
               hiddenOption="d-none d-sm-block"
               title="Project"
+              link=""
             />
           </div>
           <div className="row g-0 mb-4 row-cols-3 title-color fs-2 text-center">

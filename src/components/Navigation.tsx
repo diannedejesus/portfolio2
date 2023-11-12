@@ -1,5 +1,6 @@
 //import viteLogo from "/vite.svg";
 import "bootstrap/js/dist/collapse";
+import "bootstrap/js/dist/dropdown";
 
 function Navigation() {
   return (
@@ -29,19 +30,58 @@ function Navigation() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link disabled" aria-current="page" href="#">
+            <a
+              className="nav-link"
+              aria-current="page"
+              href="https://github.com/diannedejesus"
+              target="_blank"
+            >
               GitHub
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link"
+              href="https://www.linkedin.com/in/diannedejesus/"
+              target="_blank"
+            >
               LinkedIn
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" aria-current="page" href="#">
+            <a
+              className="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+            >
               Other
             </a>
+            <ul className="dropdown-menu dropdown-menu-end border-0 bg-transparent">
+              <li>
+                <h6 className="dropdown-header">Learn & Fun</h6>
+              </li>
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="https://overthewire.org/wargames/bandit"
+                  target="_blank"
+                >
+                  Bandit wargame
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#" target="_blank">
+                  Another action
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#" target="_blank">
+                  Something else here
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
