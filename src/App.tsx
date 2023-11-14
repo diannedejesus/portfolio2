@@ -5,19 +5,23 @@ import Navigation from "./components/Navigation";
 import HeroImage from "./components/HeroImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   const [showWork, setShowWork] = useState("");
+  const [showContactForm, setContactForm] = useState(false);
 
   return (
     <header>
       <Navigation />
-
       <div className="mt-3 mt-sm-5 px-4 px-sm-5 bg-image">
         <div className="col-md-7">
-          <HeroImage />
+          <HeroImage
+            click={() =>
+              showContactForm ? setContactForm(false) : setContactForm(true)
+            }
+          />
         </div>
-
         <div className="mt-5 mt-lg-5 col-lg-7 col-md-9">
           <h3 className="text-start mb-3 fs-4">Latest Works</h3>
           <div className="row g-1 g-sm-4 row-cols-2 row-cols-sm-3">
@@ -52,7 +56,7 @@ function App() {
               link="https://github.com/diannedejesus/the-todo-app"
             />
           </div>
-          <div className="row g-0 mb-4 row-cols-3 title-color fs-2 text-center">
+          <div className="row g-0 mb-4 row-cols-2 row-cols-md-3 title-color fs-2 text-center">
             <div>
               {showWork === "first" && <FontAwesomeIcon icon={faAnglesUp} />}
             </div>
@@ -65,6 +69,12 @@ function App() {
           </div>
         </div>
       </div>
+
+      {showContactForm && (
+        <div className="mt-3 mt-sm-5 px-4 px-sm-5">
+          <ContactForm />
+        </div>
+      )}
     </header>
   );
 }

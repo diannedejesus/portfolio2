@@ -1,7 +1,8 @@
-import WorkPreview from "./WorkPreview";
-// import "./custom.css";
+interface Props {
+  click: () => void;
+}
 
-function HeroImage() {
+function HeroImage({ click }: Props) {
   return (
     <section className="herosection">
       <div className="card border-0 bg-transparent">
@@ -20,9 +21,9 @@ function HeroImage() {
           </p>
           <div className="mt-4 mt-lg-5">
             <a
-              href="#"
-              target="_blank"
+              href="#contact"
               className="fs-5 me-2 py-2 px-4 btn button-theme"
+              onClick={click}
             >
               Contact me
             </a>
