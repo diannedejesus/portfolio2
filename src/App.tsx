@@ -12,7 +12,7 @@ function App() {
   const [showContactForm, setContactForm] = useState(false);
 
   return (
-    <header>
+    <main>
       <Navigation />
       <div className="mt-3 mt-sm-5 px-4 px-sm-5 bg-image">
         <div className="col-md-7">
@@ -32,7 +32,7 @@ function App() {
               }
               imageAlt="Image of the main window for the rent estimator application which estimates the rent for a PHA participant/solicitant"
               title="Rent Estimator"
-              link=""
+              link="https://github.com/diannedejesus/RentEstimatorSolution"
             />
 
             <WorkPreview
@@ -75,7 +75,7 @@ function App() {
           <ContactForm />
         </div>
       )}
-    </header>
+    </main>
   );
 }
 
