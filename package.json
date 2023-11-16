@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "predeploy": "npm run build",
+    "deploy": "ntl deploy --prod",
     "preview": "vite preview"
   },
   "dependencies": {
