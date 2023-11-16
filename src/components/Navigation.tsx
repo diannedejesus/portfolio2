@@ -1,4 +1,3 @@
-//import viteLogo from "/vite.svg";
 import "bootstrap/js/dist/collapse";
 import "bootstrap/js/dist/dropdown";
 
@@ -87,6 +86,18 @@ function Navigation() {
                   target="_blank"
                 >
                   Learn React
+                </a>
+              </li>
+              <li>
+                <h6 className="dropdown-header">Attributes</h6>
+              </li>
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="http://www.freepik.com"
+                  target="_blank"
+                >
+                  Image Designed by Freepik
                 </a>
               </li>
             </ul>
