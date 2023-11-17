@@ -35,6 +35,10 @@ a.button-theme:hover {
 .card-title {
   color: rgb(81, 84, 117);
 }
+.attributes {
+  font-size: 0.7rem;
+  font-style: italic;
+}
 
 @media (max-width: 768px) {
   .bg-image {

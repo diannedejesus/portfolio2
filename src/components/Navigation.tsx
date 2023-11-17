@@ -57,7 +57,7 @@ function Navigation() {
             >
               Other
             </a>
-            <ul className="dropdown-menu dropdown-menu-end border-0 bg-transparent">
+            <ul className="dropdown-menu dropdown-menu-end border-0">
               <li>
                 <h6 className="dropdown-header">Learn & Fun</h6>
               </li>
@@ -91,7 +91,7 @@ function Navigation() {
               <li>
                 <h6 className="dropdown-header">Attributes</h6>
               </li>
-              <li>
+              <li className="attributes">
                 <a
                   className="dropdown-item"
                   href="http://www.freepik.com"
