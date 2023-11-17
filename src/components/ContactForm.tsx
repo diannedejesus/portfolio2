@@ -6,6 +6,7 @@ function ContactForm() {
     >
       <div className="col-md-6">
         <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="row gtr-uniform gy-2 gy-mb-4">
             <div className="col-6 col-12-xsmall">
               <label htmlFor="name">Name</label>
